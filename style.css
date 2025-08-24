@@ -1,0 +1,233 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CABEÇALHO */
+.header {
+    background-color: #111;
+    color: #fffcfc;
+    padding: 1rem 0;
+}
+
+.header .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav {
+    float: right;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav_list li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav_list li a:hover {
+    color: #ff6600;
+}
+
+/* HERO / DESTAQUE */
+.hero {
+    background: url('img/hero-car.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e65c00;
+}
+
+/* SEÇÃO CARROS */
+.cars {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.cars h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.card_media img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card_body {
+    padding: 1rem;
+}
+
+.card_body h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.card_features {
+    list-style: none;
+    margin-bottom: 1rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.card_price {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ff6600;
+}
+
+.btn--secondary {
+    background-color: #111;
+    color: #fff;
+}
+
+.btn--secondary:hover {
+    background-color: #333;
+}
+
+/* SEÇÃO SOBRE */
+.about {
+    padding: 4rem 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.badges {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.badges li {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer__contact a {
+    display: block;
+    color: #ff6600;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.footer__contact a:hover {
+    color: #fff;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .nav {
+        float: none;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .nav_list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .badges {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

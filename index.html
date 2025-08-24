@@ -4,75 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência de carros</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--Cabeçalho-->
     <header class="header">
         <div class="container header">
-            a
+            <a class="brand" href="#">Agencia de carros</a>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li><a href="#carros">Carros</a></li>
+                    <li><a href="#sobre"></a>Sobre</li>
+                    <li><a href="#contato"></a>Contato</li>
+                </ul>
+            </nav>
         </div>
-
-
-
-
-
-
-
-
     </header>
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!--Seção Principal-->
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <search class="hero" aria-label="destaque">
+        <div class="container hero_content">
+            <h1>Encontre o carro dos seus sonhos com a nossa agência</h1>
+            <p>Seminovos selecionados, garantía estendida e financiamento fácil.</p>
+            <a class="btn" href="#carros">Ver ofertas</a>
+        </div>
+    </search>
 
     <!--Lista de Carros-->
 
+    <search id="carros" class="cars" aria-labelledby="titulos-carros">
+        <div class="container">
+            <h2 id="titulo-carros">Nossos Carros</h2>
+            <div class="grid">
+                <article class="card">
+                    <figure class="card_media">
+                        <img src="img/joey-banks-YApiWyp0lqo-unsplash.jpg" alt="Sedan preto visto de frente">
+                    </figure>
+                    <div class="card_body">
+                        <h3>Mustang GT 1.5</h3>
+                        <ul class="card_features">
+                            <li>2019 • 45.000 km </li>
+                            <li>Automático • Turbo</li>
+                        </ul>
+                        <p class="card_price">R$ 199.000</p>
+                        <a class="btn btn- - secondary" href="#">Mais detalhes</a>
 
+                    </div>
+                </article>
 
+                <article class="card">
+                    <figure class="card_media">
+                        <img src="img/marcel-strauss-XwPju3s_79E-unsplash.jpg" alt="SUV branco estacionado na rua">
+                    </figure>
+                    <div class="card_body">
+                        <h3>Mercedes benz</h3>
+                        <ul class="card__features">
+                            <li>2021 • 28.000 km</li>
+                            <li>>Automático • Turbo</li>
+                        </ul>
+                        <p class="card_price">R$ 350.000</p>
+                        <a class="btn btn--secondary" href="#">Mais detalhes</a>
+                    </div>
+                </article>
 
-
-
-
-
+                <article class="card">
+                    <figure class="card_media">
+                        <img src="img/muhammed-akthar-DvCKs8aqa7E-unsplash.jpg" alt="Hatch vermelho em movimento">
+                    </figure>
+                    <div class="card_body">
+                        <h3>Volkswagen Polo Highline</h3>
+                        <ul class="card__features">
+                            <li>2020 • 38.500 km</li>
+                            <li>Automático • TSI</li>
+                        </ul>
+                        <p class="card_price">R$ 89.000</p>
+                        <a class="btn btn--secondary" href="#">Mais detalhes</a>
+                    </div>
+                </article>
+            <div>
+        </div>
+    </search>
 
 
     <!--Sobre a Agencia-->
 
-
-
-
-
-
-
-
-
-
-
-    ''
+<section id="sobre" class="about" aria-labelledby="titulo-sobre">
+    <div class="container">
+        <h2 id="titulo-sobre">Sobre a Agência</h2>
+        <p> Somos uma agência com 10+ anos no mercado, todos os carros são revisados,
+        com laudo cautelar aprovado e garantia. Parcelamos em até 60x.</p>
+        <ul class="badges">
+            <li>✓Laudos aprovados</li>
+            <li>✓ Garantia estendida</li>
+            <li>✓ Troca com troco</li>
+        </ul>
+    </div>
+</section>
     <!--Contato/rodapé-->
+
+    <footer id="contato" class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2025 SuperCarros — Todos os direitos reservados.</p>
+            <address class="footer__contact">
+                <a href="tel:+5531999999">📞 (31) 99999-9999</a>
+                <a href="mailto:contato@agênciadecarros.com">Agência@gmail.com</a>
+            </address>
+
+        </div>
+    </footer>
 </body>
 </html>
